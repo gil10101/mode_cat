@@ -10,7 +10,7 @@ telemetry. A pack URL in the index must stay on this host.
 
 | Path | What it is |
 |---|---|
-| `index.json` | The catalogue: `kind: "mode-catalogue"`, `format: 1`, a name, and one entry per pack (slug, name, description, author, version, `url` relative to this file, the counts, tags) |
+| `index.json` | The catalogue: `kind: "mode-catalogue"`, `format: 1`, a name, and one entry per pack (slug, name, description, author, version, `url` relative to this file, the counts, tags, and for a theme pack `colors`: up to six hex values, bg · surface · fg · accent · ok · info, which the app's row draws as a colour cube) |
 | `packs/<slug>.mode-pack.json` | One pack per file, in the format the app writes with **Export pack** on an agent or automation row and **Create pack…** on the Marketplace page |
 
 A pack (`kind: "mode-pack"`, `format: 1`) carries up to three lists: `agents`

@@ -13,7 +13,10 @@
       "agents": 1,
       "automations": 1,
       "themes": 0,
-      "tags": ["agents", "automations"]
+      "tags": [
+        "agents",
+        "automations"
+      ]
     },
     {
       "slug": "daily-plan",
@@ -25,7 +28,10 @@
       "agents": 0,
       "automations": 1,
       "themes": 0,
-      "tags": ["automations", "notes"]
+      "tags": [
+        "automations",
+        "notes"
+      ]
     },
     {
       "slug": "ocean",
@@ -37,7 +43,17 @@
       "agents": 0,
       "automations": 0,
       "themes": 1,
-      "tags": ["themes"]
+      "tags": [
+        "themes"
+      ],
+      "colors": [
+        "#0F1A22",
+        "#16232D",
+        "#E6EEF4",
+        "#F08A5D",
+        "#5DB37A",
+        "#7EB3E3"
+      ]
     }
   ]
 }
