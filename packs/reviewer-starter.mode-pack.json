@@ -1,0 +1,49 @@
+{
+  "format": 1,
+  "kind": "mode-pack",
+  "slug": "reviewer-starter",
+  "name": "Reviewer starter",
+  "version": "1",
+  "author": "Mode",
+  "description": "A pull-request reviewer agent with a nightly review session.",
+  "agents": [
+    {
+      "key": "reviewer",
+      "name": "Reviewer",
+      "title": "Reviews pull requests",
+      "instructions": "Review the open pull requests of this repository. For each one, read the diff, run the tests the change touches, and leave one comment per finding: what is wrong, where, and the smallest fix. Approve only when every test passes and nothing is left unexplained.",
+      "avatar_variant": "specs",
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "fallback_models": ["claude-sonnet-5-5"],
+      "ask_before_switching": true,
+      "skills": [],
+      "tables": [],
+      "permission_mode": "plan",
+      "allowed_tools": ["Read", "Grep", "Glob", "Bash(git diff *)", "Bash(git log *)"],
+      "denied_tools": ["WebSearch"],
+      "notify": true,
+      "extra_args": [],
+      "isolate_config": false
+    }
+  ],
+  "automations": [
+    {
+      "key": "nightly-review",
+      "name": "Nightly review",
+      "schedule": { "kind": "weekdays", "time": "23:00" },
+      "action_kind": "start_session",
+      "action": {
+        "cwd": "~/code/project",
+        "prompt": "Review every open pull request and leave your findings as comments.",
+        "permission_mode": "plan",
+        "mode": "headless",
+        "token_cap": 400000,
+        "profile_key": "reviewer"
+      },
+      "notify_on_failure": true,
+      "keep_runs": 20
+    }
+  ],
+  "themes": []
+}

@@ -1,0 +1,43 @@
+{
+  "format": 1,
+  "kind": "mode-catalogue",
+  "name": "Mode packs",
+  "packs": [
+    {
+      "slug": "reviewer-starter",
+      "name": "Reviewer starter",
+      "description": "A pull-request reviewer agent with a nightly review session.",
+      "author": "Mode",
+      "version": "1",
+      "url": "packs/reviewer-starter.mode-pack.json",
+      "agents": 1,
+      "automations": 1,
+      "themes": 0,
+      "tags": ["agents", "automations"]
+    },
+    {
+      "slug": "daily-plan",
+      "name": "Daily plan",
+      "description": "A weekday note with the day's plan, created before you sit down.",
+      "author": "Mode",
+      "version": "1",
+      "url": "packs/daily-plan.mode-pack.json",
+      "agents": 0,
+      "automations": 1,
+      "themes": 0,
+      "tags": ["automations", "notes"]
+    },
+    {
+      "slug": "ocean",
+      "name": "Ocean",
+      "description": "A cool light and dark pair with a warm accent.",
+      "author": "Mode",
+      "version": "1",
+      "url": "packs/ocean.mode-pack.json",
+      "agents": 0,
+      "automations": 0,
+      "themes": 1,
+      "tags": ["themes"]
+    }
+  ]
+}

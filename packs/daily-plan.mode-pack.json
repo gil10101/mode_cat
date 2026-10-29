@@ -1,0 +1,25 @@
+{
+  "format": 1,
+  "kind": "mode-pack",
+  "slug": "daily-plan",
+  "name": "Daily plan",
+  "version": "1",
+  "author": "Mode",
+  "description": "A weekday note with the day's plan, created before you sit down.",
+  "agents": [],
+  "automations": [
+    {
+      "key": "daily-plan",
+      "name": "Daily plan",
+      "schedule": { "kind": "weekdays", "time": "08:00" },
+      "action_kind": "create_note",
+      "action": {
+        "title_pattern": "Daily plan {date}",
+        "tags": ["plan"]
+      },
+      "notify_on_failure": false,
+      "keep_runs": 20
+    }
+  ],
+  "themes": []
+}

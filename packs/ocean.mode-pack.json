@@ -1,0 +1,112 @@
+{
+  "format": 1,
+  "kind": "mode-pack",
+  "slug": "ocean",
+  "name": "Ocean",
+  "version": "1",
+  "author": "Mode",
+  "description": "A cool light and dark pair with a warm accent.",
+  "agents": [],
+  "automations": [],
+  "themes": [
+    {
+      "format": 1,
+      "slug": "ocean",
+      "name": "Ocean",
+      "author": "Fixture",
+      "version": "0.3.0",
+      "appearance": "auto",
+      "typography": {
+        "ui": "\"Inter\", system-ui, sans-serif",
+        "scale": 1.05
+      },
+      "radius": {
+        "control": 4,
+        "card": 8
+      },
+      "colors": {
+        "light": {
+          "m": {
+            "bg": "#EEF3F7",
+            "surface": "#FBFDFE",
+            "sunken": "#E3EAF0",
+            "hover": "#E8EEF3",
+            "selected": "#DCE5EC",
+            "line": "#D5DEE6",
+            "line-strong": "#9AA9B6",
+            "fg": "#14212B",
+            "fg-2": "#3F4F5C",
+            "fg-3": "#5E6E7B",
+            "accent": "#B4441C",
+            "accent-bg": "#F7E6DE",
+            "ok": "#2B7A4B",
+            "bad": "#B42318",
+            "info": "#1F5F99"
+          },
+          "avatar": [
+            "#C0392B",
+            "#D35400",
+            "#B9770E",
+            "#7D8C2A",
+            "#3F7D4E",
+            "#2E8B7A",
+            "#2F6F9F",
+            "#4F5FA8",
+            "#6E4FA3",
+            "#8E4A8E",
+            "#B0497A",
+            "#B85C5C"
+          ],
+          "terminal": {
+            "fg": "#14212B",
+            "bg": "#FBFDFE",
+            "cursor": "#B4441C",
+            "selection": "#DCE5EC",
+            "ansi": {
+              "black": "#14212B",
+              "red": "#B42318",
+              "green": "#2B7A4B",
+              "yellow": "#9A6A0B",
+              "blue": "#1F5F99",
+              "magenta": "#7B4EA3",
+              "cyan": "#1D7F86",
+              "white": "#C6D1DA",
+              "bright-black": "#5E6E7B",
+              "bright-red": "#D93A2B",
+              "bright-green": "#3B9A62",
+              "bright-yellow": "#B9850F",
+              "bright-blue": "#2F7BC0",
+              "bright-magenta": "#9366C0",
+              "bright-cyan": "#2A9AA2",
+              "bright-white": "#FBFDFE"
+            }
+          }
+        },
+        "dark": {
+          "m": {
+            "bg": "#0F1A22",
+            "surface": "#16232D",
+            "sunken": "#0A131A",
+            "hover": "#1D2C37",
+            "selected": "#243642",
+            "line": "#2A3B47",
+            "line-strong": "#4A5F6E",
+            "fg": "#E6EEF4",
+            "fg-2": "#B5C4CF",
+            "fg-3": "#8799A6",
+            "accent": "#F08A5D",
+            "accent-bg": "#3A2418",
+            "ok": "#5DB37A",
+            "bad": "#E5635A",
+            "info": "#7EB3E3"
+          }
+        }
+      },
+      "shadow": {
+        "light": {
+          "pop": "0 8px 24px rgba(0,0,0,.14)"
+        }
+      }
+    }
+  ]
+}
